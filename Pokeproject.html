@@ -4,74 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poke Mania</title>
-    <style>
-      h1 {
-        text-align: center;
-        color: #1d4672;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      h2 {
-        color: #1d4672;
-        text-align: center;
-        border: 1px solid #1d4672;
-        padding: 20px;
-        border-radius: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90%;
-        padding: 20px;
-      }
-      p {
-        line-height: 1.5;
-        text-align: center;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .learn-more {
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-decoration: none;
-      }
-
-      .learn-more:hover {
-        text-decoration: underline;
-      }
-      .recipe-button {
-        display: block;
-        padding: 20px;
-        margin: 0 auto;
-        color: #fcf9be;
-        background-color: #1d4672;
-        cursor: pointer;
-        border-radius: 20px;
-        border-color: #fcf9be;
-        font-size: large;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .recipe-button:hover {
-        color: white;
-        background: #1d4672;
-        transition: 200ms;
-      }
-      .footer {
-        text-align: center;
-        font-size: small;
-      }
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 60px;
-      }
-      body {
-        background: #cad8f5;
-        color: #1d4672;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -109,27 +41,5 @@
         </a>
       </p>
     </div>
-    <script>
-      function getRecipe() {
-        let name = prompt("What's your name?");
-        let email = prompt("What's your email address?");
-        let trial = prompt("Have you ever tried Poke?");
-        let heading = document.querySelector("h1");
-        trial = trial.toLowerCase();
-        if (trial === "yes") {
-          heading.innerHTML =
-            " That's awesome " +
-            name +
-            " check your inbox to get the recipe ! 🥗 ";
-        } else {
-          heading.innerHTML =
-            "Too bad for you " +
-            name +
-            ", check your inbox to get the recipe ! 🥗";
-        }
-      }
-      let recipeButton = document.querySelector(".recipe-button");
-      recipeButton.addEventListener("click", getRecipe);
-    </script>
   </body>
 </html>
